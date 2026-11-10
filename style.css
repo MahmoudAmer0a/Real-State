@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #15130f;
+    color: #f5efe3;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 34px;
+    background-color: #d4a63a;
+    color: #15130f;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #f5efe3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo img {
+    border-radius: 6px;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.links a:hover {
+    color: #d4a63a;
+    border-color: #d4a63a;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url(Assist/realStateView.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 8%;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+.intro {
+    background-color: #15130f;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.facts {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.facts h3 {
+    font-size: 3rem;
+    color: #d4a63a;
+}
+
+.interior {
+    background-color: #1f1c16;
+}
+
+.rooms {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.room {
+    flex: 1;
+    height: 480px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.room p {
+    width: 100%;
+    padding: 60px 25px 25px;
+    text-align: left;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    transition: padding-bottom 0.3s;
+}
+
+.room:hover p {
+    padding-bottom: 40px;
+}
+
+.kitchen {
+    background-image: url(Assist/kitchen.webp);
+}
+
+.living {
+    background-image: url(Assist/living_room.webp);
+}
+
+.view {
+    padding: 160px 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(Assist/rooftop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.view p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+}
+
+.neighborhood {
+    padding: 120px 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(Assist/neighborhood.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.notes {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.notes div {
+    flex: 1;
+    padding: 30px 25px;
+    background-color: rgba(21, 19, 15, 0.8);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.notes div:hover {
+    border-color: #d4a63a;
+    background-color: rgba(21, 19, 15, 0.95);
+}
+
+.notes h3 {
+    margin-bottom: 10px;
+    color: #d4a63a;
+}
+
+.work {
+    background-color: #15130f;
+}
+
+.homes {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.home {
+    flex: 1;
+    background-color: #1f1c16;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    transition: background-color 0.3s;
+}
+
+.home:hover {
+    background-color: #2b261c;
+}
+
+.home img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.home h3 {
+    margin-bottom: 8px;
+}
+
+.home p {
+    padding: 0 20px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    text-align: left;
+    background-color: #1f1c16;
+}
+
+.plan-text {
+    flex: 1;
+}
+
+.plan-text p {
+    margin-bottom: 15px;
+}
+
+.plan img {
+    flex: 1;
+    width: 45%;
+    max-height: 700px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.lakeside {
+    padding: 180px 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(Assist/lakeside.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.lakeside p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+}
+
+.contact {
+    background-color: #15130f;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #1f1c16;
+    color: #f5efe3;
+    border: 1px solid #3a3426;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #d4a63a;
+}
+
+button {
+    padding: 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #d4a63a;
+    color: #15130f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f5efe3;
+}
+
+#form-message {
+    margin: 10px 0 0;
+    color: #d4a63a;
+}
+
+footer {
+    padding: 70px 8% 25px;
+    background-color: #0d0c09;
+    border-top: 1px solid #3a3426;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.footer-columns > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-columns .footer-about {
+    flex: 2;
+}
+
+.footer-columns h3 {
+    margin-bottom: 8px;
+    color: #d4a63a;
+}
+
+.footer-columns a {
+    color: #c9c0ad;
+    transition: color 0.3s;
+}
+
+.footer-columns a:hover {
+    color: #d4a63a;
+}
+
+.footer-columns p {
+    color: #c9c0ad;
+}
+
+.footer-about .logo p {
+    color: #f5efe3;
+}
+
+.social {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #3a3426;
+    font-size: 0.9rem;
+    color: #9c937e;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom a {
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #d4a63a;
+}
+
+#top-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4a63a;
+    color: #15130f;
+    font-weight: bold;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+}
+
+#top-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#top-button:hover {
+    background-color: #f5efe3;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .rooms, .notes, .homes, .plan {
+        flex-direction: column;
+    }
+
+    .room {
+        height: 360px;
+    }
+
+    .plan img {
+        width: 100%;
+    }
+
+    .view, .lakeside {
+        background-attachment: scroll;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
